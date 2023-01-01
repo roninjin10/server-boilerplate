@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "composite": true,
+    "target": "ESNext",
+    "lib": ["esnext"],
+    "module": "commonjs",
+    "isolatedModules": true,
+    "outDir": "dist",
+    "incremental": true,
+    "allowUnreachableCode": false,
+    "skipLibCheck": true,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true
+  },
+  "include": ["src", "src/**/*.json"]
+}

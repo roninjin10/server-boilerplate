@@ -1,0 +1,21 @@
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+name: Publish no push
+
+jobs:
+  build:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: 'Build'
+        uses: ./.github/actions/build
+
+      - name: Simulating publish package on NPM 📦
+        run: pnpm release:dry

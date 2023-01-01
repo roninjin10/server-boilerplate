@@ -1,0 +1,10 @@
+name: Build
+runs:
+  using: composite
+  steps:
+    - name: 'Setup'
+      uses: ./.github/actions/setup
+
+    - name: Run build
+      run: pnpm build
+      shell: bash
